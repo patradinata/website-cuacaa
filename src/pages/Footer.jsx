@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">About us</h3>
             <p className="text-base">ini adalah website tentang cuaca kalian bisa cek cuaca di daerah kalian masing masing jika ada kritik dan saran silakan hubungi melalui link yang di sediakan</p>
           </div>
-
+      
           {/* Kolom 2: Tautan Cepat */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Tautan Navigasi</h3>
