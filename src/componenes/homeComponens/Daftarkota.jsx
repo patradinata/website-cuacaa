@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getWeatherIcon } from "../../tools/utils.jsx";
 import { gsap } from "gsap";
 
+// eslint-disable-next-line react/prop-types
 function Daftarkota({ city }) {
   const cityRef = useRef(null); // Ref untuk elemen yang akan dianimasikan
 
@@ -21,6 +23,7 @@ function Daftarkota({ city }) {
 
   return (
     <Link
+      // eslint-disable-next-line react/prop-types
       to={`/city/${city.name}`}
       ref={cityRef} // Pasangkan ref ke elemen yang akan dianimasikan
       className="bg-white p-4 rounded-lg shadow-lg flex justify-between items-center hover:bg-indigo-200 transition-colors"

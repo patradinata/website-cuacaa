@@ -1,8 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getWeatherIcon } from "../../tools/utils.jsx";
 import { gsap } from "gsap";
 
+// eslint-disable-next-line react/prop-types
 function MainCity({ city }) {
   const mainCityRef = useRef(null); // Ref untuk elemen yang akan dianimasikan
 

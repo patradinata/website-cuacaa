@@ -10,7 +10,7 @@ function NavLink({ open, setOpen }) {
   const links = [
     { name: "home", href: "/" },
     { name: "radar", href: "/Radar" },
-    { name: "About us", href: "/AboutUs" }, // Ganti nama link sesuai kebutuhan
+    { name: "About us", href: "/AboutUs" },
   ];
 
   // Update activeLink berdasarkan URL saat berubah
@@ -24,12 +24,12 @@ function NavLink({ open, setOpen }) {
   };
 
   return (
-    <nav className={`fixed z-50 top-0 left-0 bg-white w-64 h-screen px-4 pt-6 transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"}`}>
+    <nav className={`fixed z-50 top-0 left-0 bg-white w-64 h-screen px-6 pt-4 transform transition-transform duration-300 ease-in-out ${open ? "translate-x-0" : "-translate-x-full"}`}>
       <div className="flex items-center justify-between border-b border-slate-300 pb-4">
         <Link to="/" className="text-2xl text-indigo-800 font-semibold">
           Weather
         </Link>
-        <button onClick={() => setOpen(false)} className=" active:scale-90 text-4xl text-indigo-800">
+        <button onClick={() => setOpen(false)} className="text-2xl text-indigo-800">
           <MdOutlineClose />
         </button>
       </div>
